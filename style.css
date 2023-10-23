@@ -1,0 +1,142 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'raleway';
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#carrinho{
+    color: white;
+}
+#cont-carrinho{
+    color: rgb(84, 80, 80);
+    font-weight: 700;
+}
+
+/* HEADER */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(204 216 255);;
+    padding: 27px 0;
+}
+
+#cont-carrinho{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    color: rgb(63 61 61);
+    background-color: rgb(255 255 255);
+    border-radius: 300px;
+}
+
+#carrinho-icon img{
+    width: 34px;
+}
+
+#titulo{
+    background-color: rgb(126, 147, 210);
+    border-radius: 17px;
+    color: white;
+    font-weight: 700;
+
+    
+}
+
+#main{
+    margin: 0 100px;
+}
+
+#carrinho-icon{
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+}
+
+.buscar button{
+    border-radius: 20px;
+    padding: 9px 20px;
+    background-color: rgb(90 122 216);
+    color: white;
+    cursor: pointer;
+}
+
+
+.produtos{
+    margin: 57px 0 66px;
+    text-align: center;
+    width:90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto-linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 49px 0;
+}
+
+.produtos img{
+    width: 250px;
+    box-shadow: 7px 7px rgb(183 201 255);
+    border-radius: 7px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.infos h3{
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.infos p{
+    font-size: 20px;
+}
+
+.produto button{
+    background-color: rgb(126, 147, 210);
+    padding: 11px 57px;
+    font-weight: 700;
+    border-radius: 24px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#buscar-input{
+    border: 1px gray solid;
+    padding: 20px 15px;
+    width: 550px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(183 201 255);
+    padding: 37px;
+    color: rgb(63 61 61);
+}

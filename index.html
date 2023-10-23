@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilhantes.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/anel.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Bri<span id="titulo"> lhantes. </span></h1>
+            </div>
+
+            <div class="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProduto()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img id="carrinho" src="img/Group 3.svg" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/brinco-ouro.jpg" alt="brinco em formato de folha dourado">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Ouro</h3>
+                            <p>R$25,00</p>
+                            <button onclick="addCarrinho('brinco 1', 25.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/brinco-perola.jpg" alt="brinco argola dourada">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Perolas</h3>
+                            <p>R$45,00</p>
+                            <button onclick="addCarrinho('brinco 2', 45.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/brinco-verde.jpg" alt="brinco em formato de coração verde">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Esmeralda</h3>
+                            <p>R$50,00</p>
+                            <button onclick="addCarrinho('brinco 3', 50.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/Rectangle 23.png" alt="brinco argola dourada com perolas separadas">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Circle</h3>
+                            <p>R$15,00</p>
+                            <button onclick="addCarrinho('brinco 4', 15.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/Rectangle 24.png" alt="brinco quadrado com pedra rosa">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Rosado</h3>
+                            <p>R$55,00</p>
+                            <button onclick="addCarrinho('brinco 5', 55.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/Rectangle 25.png" alt="brinco pendente em forma de coração">
+                        </div>
+                        <div class="infos">
+                            <h3>Brinco Heart</h3>
+                            <p>R$30,00</p>
+                            <button onclick="addCarrinho('brinco 6', 30.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>@Copyright of Brilhantes.</h3>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
