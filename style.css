@@ -36,13 +36,45 @@ header{
     padding: 27px 0;
 }
 
+#carrinho-itens{
+    border-radius: 11px;
+    margin: 276px 0px 22px 1227px;
+    position: absolute;
+    padding: 30px 47px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.tirar{
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: rgb(90 122 216);
+    margin: 10px 0 10px 14px;
+}
+
+.remove, .add{
+    padding: 5px 10px;
+    color: white;
+    border-radius: 74px;
+    background-color: rgb(90 122 216);
+}
+
+#preco-total{
+    margin: 0 23px;
+}
+
 #cont-carrinho{
     text-align: center;
     height: 20px;
     width: 20px;
-    color: rgb(63 61 61);
+    color: rgb(22 76 234); 
     background-color: rgb(255 255 255);
     border-radius: 300px;
+}
+
+li{
+    margin: 10px 0;
 }
 
 #carrinho-icon img{
@@ -60,6 +92,7 @@ header{
 
 #main{
     margin: 0 100px;
+    min-height: 523.7px;
 }
 
 #carrinho-icon{
